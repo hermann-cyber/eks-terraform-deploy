@@ -4,7 +4,7 @@ pipeline {
                 choice(name: 'Deployment_Type', choices:['apply','destroy'],description:'The deployment type')
                   }
     environment {
-        EMAIL_TO = 'fusisoft@gmail.com'
+        EMAIL_TO = '@gmail.com'
     }
     stages {
         stage('1.Terraform init') {
@@ -16,7 +16,7 @@ pipeline {
         stage('2.Terraform plan') {
             steps {
                 echo 'terraform plan phase'
-                sh 'AWS_REGION=us-west-2 terraform plan'
+                sh 'AWS_REGION=us-east-2 terraform plan'
             }
         }
         stage('3.Manual Approval') {
