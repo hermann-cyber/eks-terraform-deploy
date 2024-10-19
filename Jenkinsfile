@@ -42,7 +42,7 @@ pipeline {
             steps {
                mail bcc: 'd.dampes@yahoomail.com', body: '''Terraform deployment is completed.
                Let me know if the changes look okay.
-               Thanks yehh,
+               Thanks yy,
                Dominion System Technologies,
               +1 (313) 413-1477''', cc: 'd.dampes@yahoomail.com', from: '', replyTo: '', subject: 'Terraform Infra deployment completed!!!', to: 'd.dampes@yahoomail.com'
                           
