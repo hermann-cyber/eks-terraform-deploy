@@ -197,7 +197,7 @@ pipeline {
                 mail bcc: 'ngwahermann@gmail.com',
                      body: '''Terraform deployment is completed.
                               Let me know if the changes look great.
-                              Thanks smp updated and port open e,
+                              Thanks smp updated and port open,
                               Dominion System Technologies,
                               +1 (313) 413-1477''',
                      cc: 'ngwahermann@gmail.com',
