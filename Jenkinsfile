@@ -140,7 +140,7 @@ pipeline {
         choice(name: 'Deployment_Type', choices: ['apply', 'destroy'], description: 'The deployment type')
     }
     environment {
-        EMAIL_TO = 'd.dampes@yahoomail.com'
+        EMAIL_TO = 'ngwahermann@gmail.com'
         AWS_REGION = 'us-east-2'
     }
     stages {
@@ -194,15 +194,15 @@ pipeline {
 
         stage('5. Email Notification') {
             steps {
-                mail bcc: 'd.dampes@yahoomail.com',
+                mail bcc: 'ngwahermann@gmail.com',
                      body: '''Terraform deployment is completed.
                               Let me know if the changes look okay.
                               Thanks smp updated and port open,
                               Dominion System Technologies,
                               +1 (313) 413-1477''',
-                     cc: 'd.dampes@yahoomail.com',
+                     cc: 'ngwahermann@gmail.com',
                      subject: 'Terraform Infra Deployment Completed!!!',
-                     to: 'd.dampes@yahoomail.com'
+                     to: 'ngwahermann@gmail.com'
             }
         }
     }
