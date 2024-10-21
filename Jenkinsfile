@@ -6,7 +6,7 @@ pipeline {
     }
     environment {
         EMAIL_TO = 'ngwahermann@gmail.com'
-        AWS_REGION = 'us-east-2'
+        AWS_REGION = 'us-west-2'
     }
     stages {
         stage('1. Terraform Init') {
