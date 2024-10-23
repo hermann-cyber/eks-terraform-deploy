@@ -234,7 +234,7 @@ pipeline {
                 mail bcc: 'ngwahermann@gmail.com',
                      body: '''Terraform deployment is completed.
                               Let me know if the changes look great.
-                              Thank  you for your support ,
+                              Thanks for your support ,
                               Dominion System Technologies,
                               +1 (313) 413-1477''',
                      cc: 'ngwahermann@gmail.com',
